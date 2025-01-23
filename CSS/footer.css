@@ -1,0 +1,70 @@
+/* Réinitialisation */
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style du footer */
+footer {
+    background-color: #8B0000; /* Rouge foncé */
+    color: white;
+    position: relative; /* Fixe le footer en bas */
+    bottom: 0;
+    width: 100%; /* Prend toute la largeur de l'écran */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    padding: 15px 0; /* Espacement intérieur */
+    margin: 0; /* Aucune marge autour */
+}
+
+/* Contenu principal du footer */
+.footer-content {
+    display: flex;
+    justify-content: space-between; /* Espacement entre les éléments */
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto; /* Centrage horizontal */
+    padding: 0 20px; /* Espacement intérieur */
+}
+
+/* Bouton Contact avec effet */
+.btn-contact {
+    background: none;
+    color: white;
+    border: 2px solid white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 23px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transition ajoutée */
+}
+
+.btn-contact:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Ajout d'un effet de survol */
+    transform: scale(1.05); /* Zoom léger au survol */
+}
+
+/* Images dans le footer */
+.footer-center img,
+.footer-right img {
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+/* Texte centré en dessous */
+footer p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Assure que le footer n'a pas de marges autour */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
