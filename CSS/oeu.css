@@ -214,3 +214,86 @@ h2 {
 
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Galerie */
+    .gallery {
+        grid-template-columns: repeat(2, 1fr); /* Afficher 2 éléments par ligne sur les écrans moyens */
+        gap: 15px;
+    }
+
+    /* Galerie item */
+    .gallery-item {
+        box-shadow: 0 6px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Image principale dans la lightbox */
+    .lightbox-img {
+        max-width: 90%; /* Ajuste l'image à la largeur de l'écran */
+        margin-bottom: 10px;
+    }
+
+    /* Boutons de contrôle lightbox */
+    .lightbox-controls {
+        width: 150px; /* Réduit la largeur des boutons */
+    }
+
+    /* Taille des titres */
+    h2 {
+        font-size: 24px;
+    }
+
+    /* Ajustement des boutons */
+    .button-container button {
+        padding: 8px 15px;
+    }
+
+    /* Section avec padding réduit */
+    .section {
+        padding: 40px 15px;
+    }
+
+    /* Boutons avec taille de texte réduite */
+    button {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Galerie */
+    .gallery {
+        grid-template-columns: 1fr; /* Afficher 1 élément par ligne sur les petits écrans */
+        gap: 10px;
+    }
+
+    /* Conteneur de la galerie */
+    .gallery-item {
+        box-shadow: 0 4px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Lightbox */
+    .lightbox-img {
+        max-width: 95%;
+    }
+
+    /* Réduire la taille des titres */
+    h2 {
+        font-size: 20px;
+    }
+
+    /* Ajustement des boutons de contrôle */
+    .lightbox-controls {
+        width: 120px;
+    }
+
+    /* Réduction du texte et padding dans les sections */
+    .section {
+        padding: 30px 10px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+}

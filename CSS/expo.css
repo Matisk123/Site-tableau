@@ -83,3 +83,58 @@ body {
         padding: 15px;
     }
 }
+
+
+/* Pour les tablettes */
+@media (max-width: 768px) {
+    .expo-box {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .expo-image {
+        width: 100%; /* L'image occupe toute la largeur */
+    }
+
+    .expo-texts {
+        padding: 15px;
+        align-items: center; /* Centre le texte */
+        text-align: center;
+    }
+
+    .expo-texts h1 {
+        font-size: 26px; /* Taille réduite pour les titres */
+    }
+
+    .expo-texts p {
+        font-size: 20px; /* Taille réduite pour le texte */
+    }
+
+    .separator {
+        border-top: 8px solid #8B0000; /* Ligne plus fine pour les petits écrans */
+        margin: 15px 0;
+    }
+}
+
+/* Pour les téléphones (écrans très petits) */
+@media (max-width: 480px) {
+    .expo-texts h1 {
+        font-size: 22px; /* Réduction supplémentaire pour les titres */
+    }
+
+    .expo-texts p {
+        font-size: 18px; /* Texte plus petit pour les téléphones */
+        line-height: 1.4; /* Réduction de l'interligne */
+    }
+
+    .expo-texts {
+        gap: 5px; /* Moins d'espace entre les éléments */
+    }
+
+    .expo-image {
+        width: 100%; /* L'image occupe 100% */
+        height: 200px; /* Hauteur fixe pour éviter qu'elle prenne trop de place */
+        object-fit: cover; /* Ajuste l'image à la boîte */
+    }
+}

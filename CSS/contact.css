@@ -131,3 +131,68 @@ body {
 .submit-btn:focus {
     outline: none;
 }
+
+
+/* Styles généraux : inchangés */
+
+/* Styles responsives */
+@media (max-width: 768px) {
+    /* Pour les tablettes et les téléphones */
+    .contact-section {
+        padding: 30px 10px;
+    }
+
+    .contact-info h1 {
+        font-size: 28px;
+    }
+
+    .contact-info p {
+        font-size: 16px;
+    }
+
+    .contact-form {
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    .contact-form h2 {
+        font-size: 22px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .submit-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Pour les petits téléphones */
+    .contact-info h1 {
+        font-size: 24px;
+    }
+
+    .contact-info p {
+        font-size: 14px;
+    }
+
+    .contact-form h2 {
+        font-size: 20px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .submit-btn {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+}

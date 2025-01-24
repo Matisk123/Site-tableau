@@ -170,3 +170,67 @@ header {
     background-color: rgba(255, 255, 255, 0.2);
     transform: scale(1.05);
 }
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Réduction de la taille de l'image dans le header */
+    .logo img {
+        height: 80px;
+        margin-bottom: 10px;
+    }
+
+    /* Alignement des boutons en colonne */
+    .nav-right {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    /* Barre de recherche responsive */
+    .search-bar {
+        width: 100%; /* Prend toute la largeur */
+        right: 0; /* Positionne correctement */
+        padding-left: 40px; /* Ajuste pour l'icône */
+        font-size: 14px;
+    }
+
+    /* Dropdown contenu aligné verticalement */
+    .dropdown-content {
+        flex-direction: column; /* Alignement vertical */
+        top: 40px; /* Ajuste la position */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Réduction supplémentaire de l'image */
+    .logo img {
+        height: 60px;
+    }
+
+    /* Espacement réduit pour les boutons */
+    .btn {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    /* Barre de recherche sur une nouvelle ligne */
+    .search-bar {
+        position: static; /* Enlève le positionnement absolu */
+        margin-top: 10px;
+        margin-bottom: 15px;
+        text-align: center; /* Centre le contenu */
+    }
+
+    /* Texte centré pour le header */
+    header {
+        text-align: center;
+        padding: 10px;
+    }
+
+    /* Alignement des éléments de navigation */
+    .navbar {
+        align-items: center; /* Centrer le contenu */
+    }
+}

@@ -68,3 +68,39 @@ html, body {
     padding: 0;
     height: 100%;
 }
+
+
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* Passe les éléments en colonne */
+        align-items: center;
+        text-align: center;
+        gap: 15px; /* Espace entre les éléments */
+    }
+
+    .btn-contact {
+        font-size: 16px; /* Réduit la taille du bouton */
+        padding: 8px 15px; /* Ajuste les marges internes */
+    }
+
+    footer p {
+        font-size: 16px; /* Taille réduite pour s'adapter */
+    }
+}
+
+/* Pour les petits écrans (téléphones) */
+@media (max-width: 480px) {
+    .btn-contact {
+        font-size: 14px; /* Taille encore plus réduite */
+        padding: 6px 12px; /* Ajustement des paddings */
+    }
+
+    .footer-content img {
+        width: 20px; /* Taille des icônes réduite */
+    }
+
+    footer p {
+        font-size: 14px; /* Réduction de la taille du texte */
+    }
+}

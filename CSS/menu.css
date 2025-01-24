@@ -71,4 +71,59 @@ h2 {
 }
 
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Ajustement des titres */
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Ajustement de la taille de l'image principale */
+    .main-image {
+        max-width: 90%; /* Limite la taille de l'image */
+        margin-bottom: 15px;
+    }
+
+    /* Ajustement des marges et padding */
+    .content-container {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    /* Réduction de la taille du texte descriptif */
+    .text-above {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajustement des titres pour petits écrans */
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    /* Ajustement de l'image principale */
+    .main-image {
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* Conteneur de contenu avec padding réduit */
+    .content-container {
+        padding: 15px;
+    }
+
+    /* Réduction du texte descriptif */
+    .text-above {
+        font-size: 0.9rem;
+    }
+}
 
